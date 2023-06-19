@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:movie_app/core/theme/app_color/app_colors.dart';
+import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 import 'package:movie_app/core/utils/app_strings.dart';
 import 'package:movie_app/home/presentaion/controller/home_provider.dart';
 
@@ -19,7 +20,7 @@ class HomeScreen extends ConsumerWidget {
               prov.changeTheme();
             },
             icon: Icon(
-              prov.isLight ? Icons.dark_mode_rounded : Icons.wb_sunny_rounded,
+              prov.isLight ? AppIcons.moonIcon : AppIcons.sunIcon,
               color: AppColors.whiteColor,
             ),
           ),
@@ -33,12 +34,12 @@ class HomeScreen extends ConsumerWidget {
           items: const [
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.movie,
+                  AppIcons.movieIcon,
                 ),
                 label: AppStrings.movies),
             BottomNavigationBarItem(
                 icon: Icon(
-                  Icons.tv,
+                  AppIcons.tvIcon,
                 ),
                 label: AppStrings.tvNavBar),
           ]),

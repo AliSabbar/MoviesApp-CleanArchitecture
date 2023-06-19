@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:movie_app/core/network/api_constance.dart';
 import 'package:movie_app/core/theme/app_color/app_colors.dart';
 import 'package:movie_app/core/theme/app_font_size/app_font_size.dart';
+import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 import 'package:movie_app/core/utils/app_strings.dart';
 import 'package:movie_app/core/utils/enums.dart';
 import 'package:movie_app/core/utils/widgets/cache_my_image.dart';
@@ -74,7 +75,7 @@ class TvDetailsWidget extends ConsumerWidget {
                         Column(
                           children: [
                             const Icon(
-                              Icons.star,
+                              AppIcons.starIcon,
                               color: AppColors.yellowColor,
                               size: AppFontSize.iconDetailsSize,
                             ),
@@ -90,7 +91,7 @@ class TvDetailsWidget extends ConsumerWidget {
                         Column(
                           children: [
                             Icon(
-                              Icons.tv_rounded,
+                              AppIcons.tvBeginDateIcon,
                               color: Colors.grey[300],
                               size: AppFontSize.iconDetailsSize,
                             ),
@@ -220,7 +221,7 @@ class TvDetailsWidget extends ConsumerWidget {
                                             backgroundColor:
                                                 AppColors.whiteColor,
                                             child: Icon(
-                                              Icons.person,
+                                              AppIcons.personIcon,
                                               size: 40,
                                               color: AppColors.darkColor,
                                             ),

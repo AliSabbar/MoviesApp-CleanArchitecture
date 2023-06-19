@@ -12,6 +12,8 @@ import 'package:movie_app/core/utils/widgets/error_message.dart';
 import 'package:movie_app/core/utils/widgets/movie_card.dart';
 import 'package:movie_app/movies/presentaion/controller/movie_details_provider.dart';
 
+import '../../../core/theme/app_icons/app_icons.dart';
+
 class MovieDetailsWidget extends ConsumerWidget {
   const MovieDetailsWidget({super.key, required this.id});
 
@@ -72,7 +74,7 @@ class MovieDetailsWidget extends ConsumerWidget {
                         Column(
                           children: [
                             const Icon(
-                              Icons.star,
+                              AppIcons.starIcon,
                               color: AppColors.yellowColor,
                               size: AppFontSize.iconDetailsSize,
                             ),
@@ -89,7 +91,7 @@ class MovieDetailsWidget extends ConsumerWidget {
                         Column(
                           children: [
                             Icon(
-                              Icons.access_time_filled_rounded,
+                             AppIcons.timeIcon,
                               color: Colors.grey[300],
                               size: AppFontSize.iconDetailsSize,
                             ),

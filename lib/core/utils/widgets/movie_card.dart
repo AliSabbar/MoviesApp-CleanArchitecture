@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/theme/app_color/app_colors.dart';
+import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 import 'package:movie_app/core/utils/app_strings.dart';
 import 'package:movie_app/core/utils/widgets/cache_my_image.dart';
 import 'package:movie_app/tv/presentaion/screens/tv_details_screen.dart';
@@ -58,7 +59,7 @@ class DefaultCard extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       const Icon(
-                        Icons.star,
+                        AppIcons.starIcon,
                         color: AppColors.yellowColor,
                       ),
                       const SizedBox(

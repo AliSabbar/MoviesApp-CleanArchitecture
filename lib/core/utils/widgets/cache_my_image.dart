@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/network/api_constance.dart';
 import 'package:movie_app/core/theme/app_color/app_colors.dart';
+import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 import 'package:movie_app/core/utils/app_strings.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -26,7 +27,7 @@ class CacheMyImage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Icon(
-              Icons.error_rounded,
+              AppIcons.errorIcon,
               size: 30,
               color: Colors.red,
             ),

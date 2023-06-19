@@ -3,6 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_app/core/network/api_constance.dart';
 import 'package:movie_app/core/theme/app_color/app_colors.dart';
+import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 
 class DefaultSlider extends StatelessWidget {
   const DefaultSlider({
@@ -70,7 +71,7 @@ class DefaultSlider extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   const Icon(
-                                    Icons.circle,
+                                    AppIcons.redCircleIcon,
                                     color: AppColors.redColor,
                                     size: 16.0,
                                   ),
