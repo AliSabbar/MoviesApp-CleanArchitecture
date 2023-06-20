@@ -4,6 +4,6 @@ class AppFontSize {
   static const bodyFontSize = 15.0;
   static const searchNotFoundIconsSize = 100.0;
   static const iconDetailsSize = 28.0;
-  static const iconDetailsFontSize = 16.0;
+  static const iconDetailsFontSize = 13.0;
   static const creatorsFontSize = 15.0;
 }

@@ -20,7 +20,6 @@ class MovieProvider extends ChangeNotifier {
     fetchNowMoviePlayingData();
     fetchPopularMovie();
     fetchTopRatedMovie();
-    // fetchMovieDetails(MovieDetailsParameters(id: 385687));
   }
 
   fetchNowMoviePlayingData() async {
@@ -55,17 +54,6 @@ class MovieProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  fetchMovieDetails(BaseDetailsParameters parameters) async {
-    final result = await MovieDetailsUseCase(baseMovieRepository: sl())
-        .call(BaseDetailsParameters(id: parameters.id));
-    result.fold(
-        (l) => movieDetailsState = GeneralStates(
-            message: l.message, requestStates: RequestStates.error),
-        (r) => movieDetailsState =
-            GeneralStates(data: r, requestStates: RequestStates.loaded));
-  }
-
-  notifyListeners();
 }
 
 final movieProvider = ChangeNotifierProvider((ref) => MovieProvider());

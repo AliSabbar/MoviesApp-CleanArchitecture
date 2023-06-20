@@ -14,4 +14,5 @@ class AppIcons {
   static const searchIcon =  Icons.search;
   static const clearIcon =  Icons.clear_rounded;
   static const searchNotFoundIcon =  Icons.tv_off_rounded;
+  static const arrowBackIcon =  Icons.arrow_back_ios_rounded;
 }
