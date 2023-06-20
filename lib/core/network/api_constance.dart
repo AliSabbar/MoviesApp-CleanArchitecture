@@ -22,4 +22,7 @@ class ApiConstance {
 
   static String getRecommendedTv(int id) =>
       "$baseUrl/tv/$id/recommendations?api_key=$apiKey";
+
+  static String search({required String query}) =>
+      "$baseUrl/search/multi?query=$query&api_key=$apiKey";
 }

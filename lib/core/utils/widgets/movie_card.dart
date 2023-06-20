@@ -79,11 +79,14 @@ class DefaultCard extends StatelessWidget {
             const SizedBox(
               height: 5,
             ),
-            Text(
-              title,
-              style: Theme.of(context).textTheme.titleSmall,
-              maxLines: 2,
-              textAlign: TextAlign.center,
+            SizedBox(
+              width: 150,
+              child: Text(
+                title,
+                style: Theme.of(context).textTheme.titleSmall,
+                maxLines: 2,
+                textAlign: TextAlign.center,
+              ),
             ),
           ],
         ),

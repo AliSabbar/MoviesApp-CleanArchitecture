@@ -11,4 +11,7 @@ class AppIcons {
   static const timeIcon =  Icons.access_time_filled_rounded;
   static const tvBeginDateIcon =  Icons.tv_rounded;
   static const personIcon =  Icons.person;
+  static const searchIcon =  Icons.search;
+  static const clearIcon =  Icons.clear_rounded;
+  static const searchNotFoundIcon =  Icons.tv_off_rounded;
 }

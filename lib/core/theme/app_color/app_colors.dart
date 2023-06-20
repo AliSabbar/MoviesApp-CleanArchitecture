@@ -8,4 +8,5 @@ class AppColors {
   static const errorColor = Color(0xffFF0000);
   static const yellowColor = Color(0xFFFFEB3B);
   static const redColor = Color(0xffFF0000);
+  static const deepPurpleColor = Color(0xFF673AB7);
 }

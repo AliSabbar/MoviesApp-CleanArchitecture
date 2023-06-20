@@ -11,6 +11,28 @@ class AppDarkThemeData {
       appBarTheme: darkAppBarTheme(),
       bottomNavigationBarTheme: lightBottomNavigationBar(),
       textTheme: darkTextTheme(),
+      inputDecorationTheme: inputDecorationDarkTheme(),
+    );
+  }
+
+  static InputDecorationTheme inputDecorationDarkTheme() {
+    return InputDecorationTheme(
+      filled: true,
+      fillColor: AppColors.whiteColor,
+      enabledBorder: OutlineInputBorder(
+        borderSide: const BorderSide(
+          width: 2,
+          color: AppColors.whiteColor,
+        ),
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: const BorderSide(
+          width: 2,
+          color: AppColors.whiteColor,
+        ),
+        borderRadius: BorderRadius.circular(15.0),
+      ),
     );
   }
 

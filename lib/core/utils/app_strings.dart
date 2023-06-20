@@ -11,9 +11,12 @@ class AppStrings {
   static const String topRatedTvShow = 'Top Rated Tv Show';
   static const String tv = 'tv';
   static const String creators = 'Creators';
-  static const String  noInformationFound =  'no information found';
-  static const String  recommendedTvShow =  'Recommended Tv Show';
-  static const String  errorLoadImage =  "Can't load the image";
-  static const String  movies =  "Movies";
-  static const String  tvNavBar =  "Tv";
+  static const String noInformationFound = 'No Information Found';
+  static const String recommendedTvShow = 'Recommended Tv Show';
+  static const String errorLoadImage = "Can't load the image";
+  static const String moviesNavBar = "Movies";
+  static const String tvNavBar = "Tv";
+  static const String searchNavBar = "Search";
+  static const String clearButton = "Clear";
+  static const String notSearchYet = "Search For Movies And Tv Show";
 }

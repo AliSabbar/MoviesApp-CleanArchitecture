@@ -1,4 +1,3 @@
-import '../../movies/domain/entities/movie.dart';
 import 'enums.dart';
 
 class GeneralStates {

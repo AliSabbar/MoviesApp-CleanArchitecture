@@ -4,6 +4,7 @@ import 'package:movie_app/core/theme/app_color/app_colors.dart';
 import 'package:movie_app/core/theme/app_icons/app_icons.dart';
 import 'package:movie_app/core/utils/app_strings.dart';
 import 'package:movie_app/home/presentaion/controller/home_provider.dart';
+import 'package:movie_app/home/presentaion/widgets/bottom_navigationbar_items.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -31,18 +32,7 @@ class HomeScreen extends ConsumerWidget {
           onTap: (index) {
             prov.changeIndex(index: index);
           },
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(
-                  AppIcons.movieIcon,
-                ),
-                label: AppStrings.movies),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  AppIcons.tvIcon,
-                ),
-                label: AppStrings.tvNavBar),
-          ]),
+          items: bottomNavigationBarItems),
       body: prov.screens[prov.currentIndex],
     );
   }
